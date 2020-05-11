@@ -1,0 +1,3 @@
+homePageTitle: Exemple de localisation en Flutter
+homePageCenterText(int times): "Vous avez appuyé le bouton $times fois"
+incrementTooltip: Incrémenter
