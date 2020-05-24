@@ -1,5 +1,7 @@
 # Flutter localization sample with [i69n](https://pub.dev/packages/i69n)
 
+![blog-cover](https://miro.medium.com/max/1400/1*jxfIDeqCYCTT1jmNY44hUw.png)
+
 ## Features ✨
 
 * Keeps translations in `.yaml` files, one per each language;
