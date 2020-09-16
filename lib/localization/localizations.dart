@@ -6,9 +6,9 @@ import 'package:flutterlocalizationexample/localization/translations/translation
 const _supportedLocales = ['en', 'fr', 'ru'];
 
 class ExampleLocalizations {
-  final Translations translations;
-
   const ExampleLocalizations(this.translations);
+
+  final Translations translations;
 
   static final _translations = <String, Translations Function()>{
     'en': () => const Translations(),

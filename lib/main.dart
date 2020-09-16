@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        localizationsDelegates: [
+        localizationsDelegates: const [
           ExampleLocalizations.delegate,
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: translations.incrementTooltip,
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
