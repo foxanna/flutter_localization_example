@@ -1,25 +1,23 @@
-name: flutterlocalizationexample
+name: flutter_localization_example
 description: Flutter application localization example
-
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-
-  i69n: ^1.1.0
+  i69n: ^2.0.1
 
 dev_dependencies:
+  build_runner:
+  extra_pedantic: 1.2.0
   flutter_test:
     sdk: flutter
-  extra_pedantic: ^1.2.0
-
-  build_runner:
 
 flutter:
   uses-material-design: true

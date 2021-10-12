@@ -3,43 +3,43 @@
 import 'package:i69n/i69n.dart' as i69n;
 import 'translations.i69n.dart';
 
-String get _languageCode => 'ru';
-String get _localeName => 'ru';
+String get _languageCode => 'uk';
+String get _localeName => 'uk';
 
 String _plural(int count,
-        {String zero,
-        String one,
-        String two,
-        String few,
-        String many,
-        String other}) =>
+        {String? zero,
+        String? one,
+        String? two,
+        String? few,
+        String? many,
+        String? other}) =>
     i69n.plural(count, _languageCode,
         zero: zero, one: one, two: two, few: few, many: many, other: other);
 String _ordinal(int count,
-        {String zero,
-        String one,
-        String two,
-        String few,
-        String many,
-        String other}) =>
+        {String? zero,
+        String? one,
+        String? two,
+        String? few,
+        String? many,
+        String? other}) =>
     i69n.ordinal(count, _languageCode,
         zero: zero, one: one, two: two, few: few, many: many, other: other);
 String _cardinal(int count,
-        {String zero,
-        String one,
-        String two,
-        String few,
-        String many,
-        String other}) =>
+        {String? zero,
+        String? one,
+        String? two,
+        String? few,
+        String? many,
+        String? other}) =>
     i69n.cardinal(count, _languageCode,
         zero: zero, one: one, two: two, few: few, many: many, other: other);
 
-class Translations_ru extends Translations {
-  const Translations_ru();
-  String get homePageTitle => "Пример локализации на Flutter";
+class Translations_uk extends Translations {
+  const Translations_uk();
+  String get homePageTitle => "Приклад локалізації на Flutter";
   String homePageCenterText(int times) =>
-      "Вы нажали кнопку $times ${_plural(times, one: 'раз', few: 'раза', many: 'раз')}";
-  String get incrementTooltip => "Добавить";
+      "Ви натиснули на кнопку $times ${_plural(times, one: 'раз', few: 'рази', many: 'разів')}";
+  String get incrementTooltip => "Додати";
   Object operator [](String key) {
     var index = key.indexOf('.');
     if (index > 0) {

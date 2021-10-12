@@ -1,0 +1,3 @@
+homePageTitle: Приклад локалізації на Flutter
+homePageCenterText(int times): "Ви натиснули на кнопку $times ${_plural(times, one:'раз', few:'рази', many:'разів')}"
+incrementTooltip: Додати

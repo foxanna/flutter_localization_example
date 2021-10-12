@@ -1,9 +1,9 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutterlocalizationexample/localization/translations/translations.i69n.dart';
-import 'package:flutterlocalizationexample/localization/translations/translations_fr.i69n.dart';
-import 'package:flutterlocalizationexample/localization/translations/translations_ru.i69n.dart';
+import 'package:flutter_localization_example/localization/translations/translations.i69n.dart';
+import 'package:flutter_localization_example/localization/translations/translations_fr.i69n.dart';
+import 'package:flutter_localization_example/localization/translations/translations_uk.i69n.dart';
 
-const _supportedLocales = ['en', 'fr', 'ru'];
+const _supportedLocales = ['en', 'fr', 'uk'];
 
 class ExampleLocalizations {
   const ExampleLocalizations(this.translations);
@@ -13,7 +13,7 @@ class ExampleLocalizations {
   static final _translations = <String, Translations Function()>{
     'en': () => const Translations(),
     'fr': () => const Translations_fr(),
-    'ru': () => const Translations_ru(),
+    'uk': () => const Translations_uk(),
   };
 
   static const LocalizationsDelegate<ExampleLocalizations> delegate =
@@ -23,10 +23,10 @@ class ExampleLocalizations {
       _supportedLocales.map((x) => Locale(x)).toList();
 
   static Future<ExampleLocalizations> load(Locale locale) =>
-      Future.value(ExampleLocalizations(_translations[locale.languageCode]()));
+      Future.value(ExampleLocalizations(_translations[locale.languageCode]!()));
 
   static Translations of(BuildContext context) =>
-      Localizations.of<ExampleLocalizations>(context, ExampleLocalizations)
+      Localizations.of<ExampleLocalizations>(context, ExampleLocalizations)!
           .translations;
 }
 
